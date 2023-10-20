@@ -1,6 +1,6 @@
-import favBtn from "./assets/icons/heart.svg"
-import playBtn from "./assets/icons/play.svg"
-import dotsBtn from "./assets/icons/dots.svg"
+import favBtn from "../assets/icons/heart.svg"
+import playBtn from "../assets/icons/play.svg"
+import dotsBtn from "../assets/icons/dots.svg"
 
 export const Buttons = () => {
 
