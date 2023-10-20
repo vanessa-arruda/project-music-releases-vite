@@ -35,3 +35,6 @@ Every project should be deployed somewhere. Be sure to include the link to the d
 <a href="instructions.md">
    See instructions of this project
   </a>
+
+## Credit
+Header image by <a href="https://www.freepik.com/free-vector/sound-frequency-equalizer-colorful-background_16306150.htm">Image by starline</a> on Freepik
