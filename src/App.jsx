@@ -16,7 +16,6 @@ export const App = () => {
       <h2 className="albums-title">Albums release</h2>
       <hr/>
       <AlbumList albums={albumsType}/>
-
     </>
   );
 };
