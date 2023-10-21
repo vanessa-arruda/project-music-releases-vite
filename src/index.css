@@ -63,7 +63,8 @@ body{
 }
 
 .album-name, 
-.artist-name{
+.artist-name,
+.artist-name-separator{
   font-size: 14px;
   font-family: Helvetica;
   border-bottom: 0;
@@ -78,6 +79,10 @@ body{
 .artist-name{
   color: #a0a0a0;
   margin: 2px;
+}
+
+.artist-name-separator{
+  color: #a0a0a0;
 }
 
 /* BUTTONS */
