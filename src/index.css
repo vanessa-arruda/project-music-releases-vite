@@ -15,7 +15,7 @@ code {
 body{
   margin:0;
   color: #ececec;
-  background-color: rgb(9, 9, 9);
+  background-color: rgb(19, 19, 19);
 }
 /* Header */
 .header{
@@ -373,20 +373,18 @@ hr{
   }
 
 }
-
-
 @media screen and (max-width: 802px) {
   #title{
-    font-size: 28px;
+    font-size: 20px;
   }
 
   #subtitle{
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .singles-title,
   .albums-title{
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
   color:#dbdbdb;
   } 
