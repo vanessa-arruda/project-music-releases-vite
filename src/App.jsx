@@ -17,12 +17,14 @@ export const App = () => {
           <Playlist playlistData={playlistData}/>
         </div>
         <div className="singles-albums-container">
-          <h2 className="singles-title">Singles release</h2>
-          <hr/>
-          <AlbumList albums={singlesType}/>
+          <div className="singles-albums-section-container">
+            <h2 className="singles-title">Singles release</h2>
+            <AlbumList albums={singlesType}/>
+          </div>
+          <div className="singles-albums-section-container">
           <h2 className="albums-title">Albums release</h2>
-          <hr/>
           <AlbumList albums={albumsType}/>
+          </div>
         </div>
       </div>
     </>

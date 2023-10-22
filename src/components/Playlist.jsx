@@ -5,7 +5,7 @@ export const Playlist = (props) => {
 
         <div className="playlist-item" key={playlist.id}>
             <img className="playlist-img" src={playlist.images[0].url} alt="album image"/>
-            <a target="_blank" href={playlist.external_urls.spotify}>{playlist.name}</a> 
+            <a className="playlist-name" target="_blank" href={playlist.external_urls.spotify}>{playlist.name}</a> 
         </div>
 
     ));
@@ -13,10 +13,10 @@ export const Playlist = (props) => {
   return (
     <div className="playlist-container">
         <div className="playlist-header">
-            <img className="playlist-icon" src="/icon-playlist-32.png"/>
-            <h2>{playlistHeader}</h2>
+            <img className="playlist-header-icon" src="/icon-playlist-32.png"/>
+            <h2 className="playlist-title">{playlistHeader}</h2>
         </div>
-        <div>{playlistsLinks}</div>
+        <div className="playlists-items-container">{playlistsLinks}</div>
     </div>
   )
 };

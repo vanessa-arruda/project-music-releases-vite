@@ -15,16 +15,16 @@ code {
 body{
   margin:0;
   color: #ececec;
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(9, 9, 9);
 }
-/* HEADER */
+/* Header */
 .header{
   margin: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 180px;
+  height: 120px;
   background-image: url(/public/sound-frequency-equalizer-colorful-background/SL_123119_26548_dark.jpg);
   background-size: contain;
   color: #eeecec;
@@ -32,49 +32,104 @@ body{
   position: fixed;
   top: 0;
   z-index: 10;
+  border-radius: 10px;
 }
 
 #title{
-  font-size: 42px;
+  font-size: 36px;
   margin-bottom: 0px;
 }
 
 #subtitle{
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 8px;
 }
 
+/* Main containers */
+
 .main-content-container{
   display: flex;
-
 }
 
 .sidebar-container{
   min-width: 300px;
-  margin-top: 200px;
+  margin-top: 140px;
+  margin-left: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
 
+.singles-albums-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 320px;
+
+}
+
+/* Sidebar with Playlists */
+.playlist-container{
+  margin: 10px;
 }
 
 .playlist-header{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-/* ALBUMS SECTION */
+.playlists-items-container{
+  margin-top: 10px;
+}
+
+.playlist-header-icon{
+  height: 30px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px 20px 10px;
+}
+
+.playlist-name{
+  text-decoration: none;
+  color: #a0a0a0;
+  font-family: Helvetica;
+  padding-left: 10px;
+}
+
+.playlist-title{
+  font-size: 28px;
+}
+
+/* ALbums & Singles section */
 .albums-container{
-  margin: 50px 30px;
+  margin: 30px 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-around;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
 }
 .album-card{
   display: flex;
   flex-direction: column;
-  flex-basis: 20%;
   align-items: center;
   font-size: 14px;
   position: relative;
+  margin: 20px 20px;
+  flex: 0 0 21%;
+}
 
+.album-img{
+  width: 100%;
 }
 
 .album-name, 
@@ -89,44 +144,58 @@ body{
 .album-name{
   color: #ffffff;
   margin: 10px;
+  text-align: center;
 }
 
 .artist-name{
   color: #a0a0a0;
   margin: 2px;
+  text-align: center;
 }
 
 .artist-name-separator{
   color: #a0a0a0;
 }
 
-/* BUTTONS */
+/* Buttons */
 .buttons-container{
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   gap: 20px;
   width: 100%;
   left: 0;
-  top: 35%;
+  top: 40%;
   opacity: 0;
   transition: 0.4s;
 }
 
-/* ALBUM & SINGLES SUBTITLES */
+/* Albums & Singles titles */
 .singles-title,
 .albums-title{
   font-size: 28px;
-  text-align: center;
+  text-align:left;
   color:#dbdbdb;
+  padding-left: 20px;
 }
 
 .singles-title{
-  margin-top: 200px;
+  margin: 140px 30px 0px 30px;
+  background-color: black;
+  border-radius: 10px;
+  height: 50px;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .albums-title{
-  margin-top: 50px;
+  margin: 0px 30px 0px 30px;
+  background-color: black;
+  border-radius: 10px;
+  height: 50px;
+  align-items: center;
+  padding-top: 20px;
 }
 hr{
   border: 1px solid #a0a0a0;
@@ -139,7 +208,7 @@ hr{
 /* hover effects */
 
 /* Album & artists names */
-.album-name:hover, .artist-name:hover{
+.album-name:hover, .artist-name:hover, .playlist-name:hover{
   text-decoration: underline;
 }
 
@@ -148,10 +217,6 @@ hr{
 .album-card:hover .album-img{
   filter: brightness(60%);
   transition: .2s;
-}
-
-.hidden{
-  display: none;
 }
 
 /* buttons */
@@ -165,7 +230,75 @@ hr{
   opacity: 1;
   transition: 0.8s;
 }
-@media screen and (max-width: 768px) {
+
+/* Other devices */
+
+@media screen and (max-width: 1754px) {
+  .album-card{
+    flex: 0 0 20%;
+  }
+
+  .buttons-container{
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 1479px) {
+  .album-card{
+    flex: 0 0 18%;
+  }
+
+  .buttons-container{
+    top: 30%;
+  }
+
+  .singles-title,
+  .albums-title{
+  font-size: 18px;
+  text-align: center;
+  color:#dbdbdb;
+  } 
+}
+
+@media screen and (max-width: 1165px) {
+  .album-card{
+    flex: 0 0 40%;
+  }
+
+  .buttons-container{
+    top: 35%;
+  }
+
+  .singles-title,
+  .albums-title{
+  font-size: 28px;
+  text-align: center;
+  color:#dbdbdb;
+  } 
+
+  .playlist-img{
+    display: none;
+  }
+  .playlist-name{
+    font-size: 36px;
+  }
+
+  .playlist-name{
+    font-size: 28px;
+  }
+
+  .playlists-items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #subtitle{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1165px) {
   #title{
     font-size: 28px;
   }
@@ -180,4 +313,133 @@ hr{
   text-align: center;
   color:#dbdbdb;
   } 
+
+  .singles-albums-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .album-card{
+    flex: 0 0 37%;
+  }
+
+  .main-content-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-container{
+    display: flex;
+    min-width: 810px;
+    margin-top: 140px;
+    margin-left: 0px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .singles-albums-container,
+  .albums-sec{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .singles-title{
+    margin: 30px 30px;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  #title{
+    font-size: 38px;
+    margin-bottom: 0px;
+  }
+  
+  #subtitle{
+    font-size: 28px;
+    margin-top: 8px;
+  }
+
+  .album-name, 
+  .artist-name,
+  .artist-name-separator{
+  font-size: 20px;
+  }
+
 }
+
+
+@media screen and (max-width: 802px) {
+  #title{
+    font-size: 28px;
+  }
+
+  #subtitle{
+    font-size: 18px;
+  }
+
+  .singles-title,
+  .albums-title{
+  font-size: 28px;
+  text-align: center;
+  color:#dbdbdb;
+  } 
+
+  .singles-albums-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .album-card{
+    flex: 0 0 70%;
+  }
+
+  .main-content-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-container{
+    display:none;
+  }
+
+  .singles-albums-container,
+  .albums-sec{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .singles-title{
+    margin: 140px 30px 30px 30px;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  #title{
+    font-size: 38px;
+    margin-bottom: 0px;
+  }
+  
+  #subtitle{
+    font-size: 28px;
+    margin-top: 8px;
+  }
+
+  .album-name, 
+  .artist-name,
+  .artist-name-separator{
+  font-size: 20px;
+  }
+
+}
+
+
