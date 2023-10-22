@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project made by Vanessa Arruda as part of Technigo's JavaScript & React 11 weeks Course.
 
 ## Getting Started with the Project
 
@@ -24,11 +22,12 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Create a responsive page using React, JS, multiple Components and Responsive design for multiple screen sizes.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+This project is deployed on Netlify: https://celebrated-puppy-3c3a5d.netlify.app/
+And code available in my repository: https://github.com/vanessa-arruda/project-music-releases-vite/
 
 ## Instructions
 
