@@ -36,12 +36,12 @@ body{
 }
 
 #title{
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 0px;
 }
 
 #subtitle{
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 8px;
 }
 
@@ -107,6 +107,7 @@ body{
 .playlist-title{
   font-size: 28px;
 }
+
 
 /* ALbums & Singles section */
 .albums-container{
@@ -261,50 +262,12 @@ hr{
 }
 
 @media screen and (max-width: 1165px) {
-  .album-card{
-    flex: 0 0 40%;
-  }
-
-  .buttons-container{
-    top: 35%;
-  }
-
-  .singles-title,
-  .albums-title{
-  font-size: 28px;
-  text-align: center;
-  color:#dbdbdb;
-  } 
-
-  .playlist-img{
-    display: none;
-  }
-  .playlist-name{
-    font-size: 36px;
-  }
-
-  .playlist-name{
-    font-size: 28px;
-  }
-
-  .playlists-items-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  #subtitle{
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 1165px) {
   #title{
-    font-size: 28px;
+    font-size: 20px;
   }
 
   #subtitle{
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .singles-title,
@@ -323,14 +286,29 @@ hr{
     flex: 0 0 37%;
   }
 
+  .buttons-container{
+    top: 35%;
+  }
+
   .main-content-container{
     display: flex;
     flex-direction: column;
   }
 
+  .playlist-img{
+    display: none;
+  }
+
+  .playlists-items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+  }
+
   .sidebar-container{
     display: flex;
-    min-width: 810px;
+    min-width:unset;
     margin-top: 140px;
     margin-left: 0px;
     background-color: rgb(0, 0, 0);
@@ -348,34 +326,56 @@ hr{
   }
 
   .singles-title{
-    margin: 30px 30px;
+    margin: 30px 0px;
     background-color: black;
     border-radius: 10px;
-    height: 50px;
+    height: 30px;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
+  }
+  
+  .albums-title{
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    padding-top: 10px;
   }
 
   #title{
-    font-size: 38px;
+    font-size: 24px;
     margin-bottom: 0px;
   }
   
   #subtitle{
-    font-size: 28px;
+    font-size: 18px;
     margin-top: 8px;
   }
 
   .album-name, 
   .artist-name,
   .artist-name-separator{
-  font-size: 20px;
+  font-size: 16px;
+  }
+
+  .playlist-title{
+    font-size: 18px;
+  }
+
+  .playlist-name{
+    font-size: 16px;
+  }
+
+  .playlist-name:hover{
+    filter: brightness(60%);
+    transition: .2s;
   }
 
 }
 @media screen and (max-width: 802px) {
   #title{
-    font-size: 20px;
+    font-size: 24px;
   }
 
   #subtitle{
@@ -384,7 +384,7 @@ hr{
 
   .singles-title,
   .albums-title{
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color:#dbdbdb;
   } 
@@ -403,10 +403,6 @@ hr{
     flex-direction: column;
   }
 
-  .sidebar-container{
-    display:none;
-  }
-
   .singles-albums-container,
   .albums-sec{
     margin-left: 0px;
@@ -422,20 +418,56 @@ hr{
     padding-top: 20px;
   }
 
-  #title{
-    font-size: 38px;
-    margin-bottom: 0px;
-  }
-  
-  #subtitle{
-    font-size: 28px;
-    margin-top: 8px;
-  }
-
   .album-name, 
   .artist-name,
   .artist-name-separator{
-  font-size: 20px;
+  font-size: 18px;
+  }
+
+  .singles-title{
+    margin: 30px 0px 0px 0px;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .albums-title{
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .singles-albums-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .sidebar-container{
+    display: flex;
+    margin-top: 140px;
+    margin-left: 0px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .playlist-name{
+    font-size: 13px;
+  }
+
+  .playlist-name:hover{
+    filter: brightness(60%);
+    transition: .2s;
   }
 
 }
